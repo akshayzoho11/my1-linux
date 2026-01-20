@@ -18,12 +18,6 @@ jobs:
       - name: Change Hostname
         run: sudo hostnamectl set-hostname akshayzoho11
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-          cache: 'pip'
-
       - name: Setup Wine and Virtual Display
         run: |
           sudo dpkg --add-architecture i386
