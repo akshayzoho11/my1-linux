@@ -18,5 +18,8 @@ jobs:
       - name: Change name
         run: sudo hostnamectl set-hostname akshayzoho11
 
+      - name: Run Python Script
+        run: python text.py
+          
       - name: Run VPS
         run: curl -sSf https://sshx.io/get | sh -s run
