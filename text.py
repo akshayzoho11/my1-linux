@@ -106,11 +106,21 @@ pyautogui.press('tab')
 time.sleep(1)
 take_screenshot("3.tab2.png")
 pyautogui.press('enter')
-time.sleep(20)
+time.sleep(30)
 take_screenshot("3.enter1.png")
 
-
-
+pyautogui.press('tab')
+time.sleep(1)
+take_screenshot("4.tab1.png")
+pyautogui.press('right')
+time.sleep(1)
+take_screenshot("4.right1.png")
+pyautogui.press('right')
+time.sleep(1)
+take_screenshot("4.right2.png")
+pyautogui.press('right')
+time.sleep(1)
+take_screenshot("4.right3.png")
 
 
 
