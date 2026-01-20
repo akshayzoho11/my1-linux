@@ -95,6 +95,34 @@ pyautogui.press('enter')
 time.sleep(10)
 take_screenshot("second_enter.png")
 
+pyautogui.press('tab')
+time.sleep(1)
+take_screenshot("3.tab1.png")
+pyautogui.press('tab')
+time.sleep(1)
+take_screenshot("3.tab2.png")
+pyautogui.press('space')
+time.sleep(1)
+take_screenshot("3.space1.png")
+time.sleep(1)
+pyautogui.press('tab')
+time.sleep(1)
+take_screenshot("3.tab2.png")
+pyautogui.press('enter')
+time.sleep(20)
+take_screenshot("3.enter1.png")
+
+
+
+
+
+
+
+
+
+
+
+
 # pyautogui.press('right')
 # take_screenshot("11b_after_finishing_second.png")
 # time.sleep(1)
