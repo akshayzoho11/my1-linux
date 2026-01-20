@@ -15,8 +15,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Change name
+      - name: Change Hostname
         run: sudo hostnamectl set-hostname akshayzoho11
+
+      - name: Setup Wine and Virtual Display
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt-get install -y wine64 wine32 xvfb
+          # Start a virtual screen (resolution 1280x720)
+          Xvfb :99 -screen 0 1280x720x24 > /dev/null 2>&1 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
 
       - name: Run Python Script
         run: python text.py
