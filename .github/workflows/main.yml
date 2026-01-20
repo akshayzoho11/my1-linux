@@ -14,6 +14,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+
+      - name: Change name
+        run: sudo hostnamectl set-hostname akshayzoho11
+
       - name: Run VPS
         run: curl -sSf https://sshx.io/get | sh -s run
-  
